@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer } from '@chakra-ui/react';
+import { Menu, MenuButton, MenuList, MenuItem, IconButton, Flex, Box, Spacer, Text } from '@chakra-ui/react';
 import {FcMenu, FcHome} from 'react-icons/fc';
 import {BsSearch} from 'react-icons/bs';
 import {FiKey, FiHome} from 'react-icons/fi';
@@ -13,6 +13,9 @@ const Navbar = () => (
         </Box>
         <Spacer />
         <Box>
+            <a href='https://github.com/HarmonyEarth/willow' p='2' target='_blank' style={{color: 'blue'}} rel='noreferrer'>
+                View on GitHub
+            </a>
             <Menu>
                 <MenuButton as={IconButton} icon={<FcMenu />} variant='outlined' color='pink.500' />
                 <MenuList>
